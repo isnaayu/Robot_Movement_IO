@@ -1,6 +1,6 @@
 package util;
 
-public enum Properties {
+public enum Direction {
     N,
     E,
     S,
@@ -12,10 +12,10 @@ public enum Properties {
     }
 
 
-    public Properties turnRight(){
+    public Direction turnRight(){
         return values()[(this.ordinal()+1)% values().length ];
     }
-    public Properties turnLeft(){
+    public Direction turnLeft(){
         return values()[(this.ordinal()-1) % values().length ];
     }
 }
